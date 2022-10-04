@@ -1,4 +1,7 @@
-submit50:
-  files:
+check50:
+  files: &check50_files
     - !exclude "*"
     - !require pattern.c
+
+submit50:
+  files: *check50_files
